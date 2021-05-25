@@ -10,13 +10,14 @@
     </div>
     <div class="box">
       Hover Me
-      <MouseTip >Third Mousetip</MouseTip>
+      <MouseTip :top="5" :left="5">Third Mousetip</MouseTip>
     </div>
+    {{test}}
   </div>
 </template>
 
 <script>
-import MouseTip from './components/MouseTip.vue'
+import MouseTip from './components/MouseTip/MouseTip.vue'
 
 export default {
   name: 'App',
@@ -52,12 +53,13 @@ export default {
     background: #777;
 }
 .tip{
-   font-size: 13px;
+   font-size: 12px;
     line-height: normal;
     max-width: 150px;
     height: auto;
     padding: 10px;
+    color: #fff;
     border-radius: 3px;
-    background: #FF0;
+    background: #000;
 }
 </style>

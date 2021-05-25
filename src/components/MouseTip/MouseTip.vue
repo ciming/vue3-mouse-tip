@@ -21,25 +21,27 @@ export default {
     let $parent
     const onMouseEnter = () => {
       isVisible.value = true
+      $parent.addEventListener('mousemove', onMouseMove)
     }
     const onMouseLeave = () => {
       isVisible.value = false
+      $parent.removeEventListener('mousemove', onMouseMove)
     }
     const onMouseMove = (evt) => {
       mouseX.value = evt.pageX + (props.top );
       mouseY.value = evt.pageY + (props.left);
+      
     }
     onMounted(() => {
       const $el = el.value
       $parent = $el.parentElement
       $parent.addEventListener('mouseenter', onMouseEnter)
       $parent.addEventListener('mouseleave', onMouseLeave)
-      $parent.addEventListener('mousemove', onMouseMove)
+     
     })
     onUnmounted(() => {
       $parent.removeEventListener('mouseenter', onMouseEnter)
       $parent.removeEventListener('mouseleave', onMouseLeave)
-      $parent.removeEventListener('mousemove', onMouseMove)
     })
 
     return () => {
