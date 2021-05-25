@@ -1,18 +1,19 @@
 {
   "name": "vue3-mouse-tip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "deploy": "gh-pages -d dist",
-    "lib:build": "vue-cli-service build --target lib --name Vue3MouseTip --formats umd-min ./src/components/MouseTip/index.js --modern" ,
+    "lib:build": "vue-cli-service build --target lib --name Vue3MouseTip --formats umd-min ./src/components/MouseTip/index.js --modern",
     "lib:publish": "npm run lib:build && npm publish"
   },
-  "main": "dist/Vue3MouseTip.common.js",
+  "main": "dist/Vue3MouseTip.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue3-mouse-tip": "^1.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

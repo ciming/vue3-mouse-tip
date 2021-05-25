@@ -8374,6 +8374,23 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
+vue3-mouse-tip@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/vue3-mouse-tip/-/vue3-mouse-tip-1.0.0.tgz#48730105a39d1085448f9df57603a6d37aeb72ff"
+  integrity sha512-NE482qxQTF8jPkrqGGnx1YsciYN4MhbvR37gboneMj1Riz+SF3kTAQn9uVETrNwHVjnnIB2jRQy2CuZ2NQS6SQ==
+  dependencies:
+    core-js "^3.6.5"
+    vue "^3.0.0"
+
+vue3-mouse-tip@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/vue3-mouse-tip/-/vue3-mouse-tip-1.0.1.tgz#a2e136fce7564b9f5c7ad51faf66e38581f91838"
+  integrity sha512-Io12HaULDJGPs2ZhAfQjmukxTEsdsx3AtrdL18Id96yzbr/OMbADRfJFe3VYaRpI8V/ULLMY3RRH3nIvWUWMJg==
+  dependencies:
+    core-js "^3.6.5"
+    vue "^3.0.0"
+    vue3-mouse-tip "^1.0.0"
+
 vue@^3.0.0:
   version "3.0.11"
   resolved "https://registry.npm.taobao.org/vue/download/vue-3.0.11.tgz#c82f9594cbf4dcc869241d4c8dd3e08d9a8f4b5f"
