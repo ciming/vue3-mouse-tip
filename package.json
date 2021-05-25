@@ -1,13 +1,12 @@
 {
   "name": "vue3-mouse-tip",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "deploy": "gh-pages -d dist",
-    "lib:build": "vue-cli-service build --target lib --name Vue3MouseTip ./src/components/MouseTip/index.js",
+    "lib:build": "vue-cli-service build --target lib --name Vue3MouseTip --formats umd-min ./src/components/MouseTip/index.js --modern" ,
     "lib:publish": "npm run lib:build && npm publish"
   },
   "main": "dist/Vue3MouseTip.common.js",
@@ -40,8 +39,8 @@
     "rules": {}
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11"
   ]
 }
